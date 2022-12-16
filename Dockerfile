@@ -12,4 +12,4 @@ COPY . /code/
 RUN poetry config virtualenvs.create false
 RUN poetry install
 
-CMD uvicorn application:application
+CMD uvicorn application:application --host 0.0.0.0 --port 5000
